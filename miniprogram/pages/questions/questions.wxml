@@ -1,0 +1,95 @@
+<view>
+  <image src="../../images/6.jpg" class="swiper_head" mode="widthFix"/>
+</view>
+
+<view class="answeringArea">
+  <view>
+    <span class="tittle">干电池属于什么垃圾？</span>
+    <view class="radio-group-container">
+      <view class="radio-group-box">
+        <radio-group class="radio-group" bindchange="radioChange">
+          <view class="radio-item">
+            <view class="radio-button-wrapper blue-button">
+              <radio class="radio-button" value="1"/>
+              <text class="textClass">可回收垃圾</text>
+            </view>
+            <view class="radio-button-wrapper red-button">
+              <radio class="radio-button" value="2"/>
+              <text class="textClass">有害垃圾</text>
+            </view>
+          </view>
+          <view class="radio-item">
+            <view class="radio-button-wrapper brown-button">
+              <radio class="radio-button" value="3"/>
+              <text class="textClass">湿垃圾</text>
+            </view>
+            <view class="radio-button-wrapper black-button">
+              <radio class="radio-button" value="4"/>
+              <text class="textClass">干垃圾</text>
+            </view>
+          </view>
+        </radio-group>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <span class="tittle">玻璃瓶属于什么垃圾？</span>
+    <view class="radio-group-container">
+      <view class="radio-group-box">
+        <radio-group class="radio-group" bindchange="radioChangeTwo">
+          <view class="radio-item">
+            <view class="radio-button-wrapper blue-button">
+              <radio class="radio-button" value="1"/>
+              <text class="textClass">可回收垃圾</text>
+            </view>
+            <view class="radio-button-wrapper red-button">
+              <radio class="radio-button" value="2"/>
+              <text class="textClass">有害垃圾</text>
+            </view>
+          </view>
+          <view class="radio-item">
+            <view class="radio-button-wrapper brown-button">
+              <radio class="radio-button" value="3"/>
+              <text class="textClass">湿垃圾</text>
+            </view>
+            <view class="radio-button-wrapper black-button">
+              <radio class="radio-button" value="4"/>
+              <text class="textClass">干垃圾</text>
+            </view>
+          </view>
+        </radio-group>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <span class="tittle">茶叶属于什么垃圾？</span>
+    <view class="radio-group-container">
+      <view class="radio-group-box">
+        <radio-group class="radio-group" bindchange="radioChangeThree">
+          <view class="radio-item">
+            <view class="radio-button-wrapper blue-button">
+              <radio class="radio-button" value="1"/>
+              <text class="textClass">可回收垃圾</text>
+            </view>
+            <view class="radio-button-wrapper red-button">
+              <radio class="radio-button" value="2"/>
+              <text class="textClass">有害垃圾</text>
+            </view>
+          </view>
+          <view class="radio-item">
+            <view class="radio-button-wrapper brown-button">
+              <radio class="radio-button" value="3"/>
+              <text class="textClass">湿垃圾</text>
+            </view>
+            <view class="radio-button-wrapper black-button">
+              <radio class="radio-button" value="4"/>
+              <text class="textClass">干垃圾</text>
+            </view>
+          </view>
+        </radio-group>
+      </view>
+    </view>
+  </view>
+</view>

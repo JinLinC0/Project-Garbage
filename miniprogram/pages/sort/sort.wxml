@@ -1,15 +1,30 @@
-<view class='top-view'>
-  <text>保护环境，人人有责</text>
+<view>
+  <image src="../../images/4.jpg" class="swiper_head" mode="widthFix"/>
 </view>
-<view class="cu-bar bg-darkGray search"bindtap="goSearch">
+<!-- <view class="cu-bar bg-darkGray search"bindtap="goSearch">
   <view class=" search-form  round ">
     <text class="cuIcon-search text-green"></text>
     <input type="text" placeholder="输入垃圾名称" confirm-type="search" bindinput="searchIcon"></input>
   </view>
-</view>
+</view> -->
 <view class="grid col-2 padding-sm">
   <view class="padding-sm " wx:for="{{ColorList}}" bindtap="onClick"  data-index='{{index}}' wx:key>
     <image class="icon" src='{{item}}'></image>
   </view>
+</view>
+
+<view class="view_info">
+      <view class="view_info_title">
+        ✤垃圾分类简易口诀：
+      </view>
+      <view class="view_info_txt">
+        •垃圾分类我做起，蓝绿灰红要牢记
+      </view>
+      <view class="view_info_txt" style="margin-top:12rpx;">
+        •纸塑金布放蓝桶，厨余垃圾放绿桶
+      </view>
+      <view class="view_info_txt" style="margin-top:12rpx;">
+        •有毒有害放红桶，其他垃圾放灰桶
+      </view>
 </view>
 

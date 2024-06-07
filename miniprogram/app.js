@@ -1,12 +1,11 @@
 //app.js
 App({
-  onLaunch: function() {
-
+  onLaunch() {
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力')
     } else {
       wx.cloud.init({
-        env: 'debug-5c669b',
+        env: 'cloud1-3gzzh8us56c2ef28',
         traceUser: true,
       })
     }

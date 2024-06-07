@@ -33,3 +33,10 @@
   width: 300rpx;
   height: 300rpx;
 }
+.swiper_head {
+  width: 100%;
+  height: 270rpx;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}

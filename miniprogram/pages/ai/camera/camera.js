@@ -18,14 +18,16 @@ Page({
     var curTime = new Date().getTime()
     var timeNum=new Date(parseInt(curTime - time) * 1000).getDay() 
     console.log("======="+timeNum)
-    var accessToken=wx.getStorageSync("access_token")
+    // var accessToken=wx.getStorageSync("access_token")
+    var accessToken = "24.45785a93f6bd44a41fddc6b989b5a6cc.2592000.1718934272.282335-73066523"
     console.log("====accessToken===" + accessToken+"a")
     if (timeNum > 28 || (accessToken == "" ||
       accessToken == null||accessToken == undefined)){
       this.accessTokenFunc()
     }else{
       this.setData({
-        accessToken: wx.getStorageSync("access_token")
+        // accessToken: wx.getStorageSync("access_token")
+        accessToken: "24.45785a93f6bd44a41fddc6b989b5a6cc.2592000.1718934272.282335-73066523"
       })
     }
   },
@@ -94,12 +96,12 @@ Page({
     var  that=this
     console.log("accessTokenFunc is start")
     wx.cloud.callFunction({
-      name: 'baiduAccessToken',
+      name: 'baiduaccesstoken',
       success: res => {
         console.log("===="+JSON.stringify(res))
-        console.log("====" + JSON.stringify(res.result.data.access_token))
-        that.data.accessToken = res.result.data.access_token
-        wx.setStorageSync("access_token", res.result.data.access_token)
+        console.log("====" + JSON.stringify(res.result.data?.access_token))
+        that.data.accessToken = res.result.data?.access_token
+        wx.setStorageSync("access_token", res.result.data?.access_token)
         wx.setStorageSync("time", new Date().getTime())
       },
       fail: err => {
